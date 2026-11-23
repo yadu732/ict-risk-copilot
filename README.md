@@ -21,20 +21,9 @@ This portfolio project is designed to illustrate capabilities relevant to ICT ri
 
 Python 3.10+, Streamlit, Pydantic v2, requests, pytest, Ollama (optional for real LLM generation), `llama3.2` model (example).
 
-## Quick start (Windows / PowerShell)
-
-Open VS Code's terminal **inside the `ict-risk-copilot` folder**. Type **only the commands** shown, not the surrounding Markdown code fence.
-
-```powershell
-py -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install -e ".[dev]"
-streamlit run app.py
-```
 
 Open the local URL displayed by Streamlit (typically `http://localhost:8501`). Choose **Offline demo (no LLM)** first. It runs without Ollama or a model download.
 
-If PowerShell blocks activation, run the commands with `\.venv\Scripts\python.exe` instead, e.g. `\.venv\Scripts\python.exe -m pip install -e ".[dev]"`.
 
 ### Enable the real local LLM
 
@@ -51,17 +40,6 @@ ollama list
 5. Select tickets, choose an output type, click **Generate draft**, inspect the JSON, and approve only after checking its statements.
 
 The model download requires an internet connection once. Local inference can be slow on older machines. Ollama runs models locally; no API key is used. If local inference is impractical, the deterministic offline demo still demonstrates the reporting pipeline, but **must not be described as LLM inference**.
-
-## Linux / macOS
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install -e '.[dev]'
-streamlit run app.py
-```
-
-## Command-line demo
 
 Generate a summary without an LLM:
 
@@ -139,23 +117,3 @@ Synthetic tickets -> validated data -> deterministic risk metrics ---+
                                                                                           |
                                                                                   approved JSON export
 ```
-
-## Why this project matters for ICT Risk Awareness roles
-
-The application demonstrates automation, analytical reporting, working with synthetic risk records, concise management communications, interest in generative AI and the need for human control over AI-assisted ICT risk workflows. The app is not integrated with Jira/Confluence and is not a real risk decision system.
-
-## Limitations and security
-
-Read [`docs/architecture.md`](docs/architecture.md) for risks, trust boundaries and deployment limitations. Output schema validation and evidence ID checks **do not guarantee factual accuracy**. Always confirm narrative statements against the source tickets before approving a draft.
-
-## Suggested CV bullet (only after using and understanding the local LLM mode)
-
-> Developed a local-LLM ICT risk reporting prototype using Python, Ollama and Streamlit to summarize synthetic risk tickets, draft operational status reports, and produce human-reviewed knowledge-base content; implemented structured output validation and a manual approval workflow.
-
-## Upload to GitHub
-
-See [`docs/GITHUB_UPLOAD.md`](docs/GITHUB_UPLOAD.md) for Windows PowerShell commands for a standalone repository or an IdentityGuard subfolder.
-
-## License
-
-MIT.
