@@ -1,0 +1,61 @@
+{
+  "task": "summary",
+  "generation_mode": "demo",
+  "review_status": "pending_human_review",
+  "metrics": {
+    "total_tickets": 12,
+    "active_tickets": 9,
+    "overdue_active_tickets": 4,
+    "overdue_ticket_ids": [
+      "ICT-001",
+      "ICT-002",
+      "ICT-006",
+      "ICT-007"
+    ],
+    "by_severity": {
+      "Critical": 1,
+      "High": 5,
+      "Medium": 4,
+      "Low": 2
+    },
+    "by_status": {
+      "Closed": 2,
+      "In Progress": 3,
+      "Mitigated": 1,
+      "Open": 6
+    },
+    "as_of": "2026-11-23"
+  },
+  "draft": {
+    "executive_summary": "Synthetic ICT risk snapshot as of 2026-11-23: 12 tickets, 9 active and 4 overdue active tickets. All observations require human validation.",
+    "key_risks": [
+      "[ICT-001] Critical: Privileged admin account without MFA (Open).",
+      "[ICT-002] High: Quarterly access review overdue (In Progress).",
+      "[ICT-003] High: Legacy application lacks centralized sign-in logging (Open).",
+      "[ICT-004] High: Critical patch pending on test gateway (In Progress).",
+      "[ICT-005] Medium: Service account inventory incomplete (Open).",
+      "[ICT-006] High: Backup restoration evidence missing (In Progress)."
+    ],
+    "recommended_followups": [
+      "Verify remediation progress for [ICT-001] with IAM Risk Owner; recorded action: Enforce MFA for privileged access or document an approved temporary safeguard.",
+      "Verify remediation progress for [ICT-002] with Access Governance Lead; recorded action: Complete access review with application owners and preserve review evidence.",
+      "Verify remediation progress for [ICT-003] with Platform Operations; recorded action: Enable supported log forwarding and validate alert coverage.",
+      "Verify remediation progress for [ICT-004] with Infrastructure Operations; recorded action: Confirm compatibility, schedule maintenance, and verify patch installation.",
+      "Verify remediation progress for [ICT-005] with Application Operations; recorded action: Assign owners and update the service account inventory."
+    ],
+    "evidence_ticket_ids": [
+      "ICT-001",
+      "ICT-002",
+      "ICT-003",
+      "ICT-004",
+      "ICT-005",
+      "ICT-006",
+      "ICT-007",
+      "ICT-008",
+      "ICT-009",
+      "ICT-010",
+      "ICT-011",
+      "ICT-012"
+    ]
+  }
+}

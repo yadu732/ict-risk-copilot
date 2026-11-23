@@ -1,0 +1,56 @@
+{
+  "task": "knowledge_base",
+  "generation_mode": "demo",
+  "review_status": "pending_human_review",
+  "metrics": {
+    "total_tickets": 12,
+    "active_tickets": 9,
+    "overdue_active_tickets": 4,
+    "overdue_ticket_ids": [
+      "ICT-001",
+      "ICT-002",
+      "ICT-006",
+      "ICT-007"
+    ],
+    "by_severity": {
+      "Critical": 1,
+      "High": 5,
+      "Medium": 4,
+      "Low": 2
+    },
+    "by_status": {
+      "Closed": 2,
+      "In Progress": 3,
+      "Mitigated": 1,
+      "Open": 6
+    },
+    "as_of": "2026-11-23"
+  },
+  "draft": {
+    "title": "DRAFT: ICT risk-ticket triage and remediation follow-up",
+    "objective": "Provide a reviewable outline for triaging and communicating ICT risk tickets. Examples are from synthetic ticket IDs: ICT-001, ICT-002, ICT-003, ICT-004, ICT-005, ICT-006, ICT-007, ICT-008, ICT-009, ICT-010, ICT-011, ICT-012.",
+    "steps": [
+      "Confirm ticket identity, asset, risk owner, severity, status and last update against the source record.",
+      "Document the stated business impact and existing control reference without changing the risk rating.",
+      "Identify active tickets and verify due dates against the reporting date.",
+      "Ask the named risk owner to confirm mitigation status and provide evidence of completed steps.",
+      "Escalate overdue or unresolved items using the organization's approved process.",
+      "Have an authorized reviewer approve any procedure before operational use."
+    ],
+    "escalation_and_review": "This example is not organizational policy. Seek approval from the relevant information security risk owner and confirm escalation pathways.",
+    "evidence_ticket_ids": [
+      "ICT-001",
+      "ICT-002",
+      "ICT-003",
+      "ICT-004",
+      "ICT-005",
+      "ICT-006",
+      "ICT-007",
+      "ICT-008",
+      "ICT-009",
+      "ICT-010",
+      "ICT-011",
+      "ICT-012"
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "task": "report",
+  "generation_mode": "demo",
+  "review_status": "pending_human_review",
+  "metrics": {
+    "total_tickets": 12,
+    "active_tickets": 9,
+    "overdue_active_tickets": 4,
+    "overdue_ticket_ids": [
+      "ICT-001",
+      "ICT-002",
+      "ICT-006",
+      "ICT-007"
+    ],
+    "by_severity": {
+      "Critical": 1,
+      "High": 5,
+      "Medium": 4,
+      "Low": 2
+    },
+    "by_status": {
+      "Closed": 2,
+      "In Progress": 3,
+      "Mitigated": 1,
+      "Open": 6
+    },
+    "as_of": "2026-11-23"
+  },
+  "draft": {
+    "headline": "Draft ICT risk status | 2026-11-23",
+    "management_summary": "Synthetic portfolio includes 12 tracked issues. 9 are active and 4 are overdue. Overdue IDs: ICT-001, ICT-002, ICT-006, ICT-007. This is a demonstration, not a confirmed management report.",
+    "priorities": [
+      "Verify remediation progress for [ICT-001] with IAM Risk Owner; recorded action: Enforce MFA for privileged access or document an approved temporary safeguard.",
+      "Verify remediation progress for [ICT-002] with Access Governance Lead; recorded action: Complete access review with application owners and preserve review evidence.",
+      "Verify remediation progress for [ICT-003] with Platform Operations; recorded action: Enable supported log forwarding and validate alert coverage.",
+      "Verify remediation progress for [ICT-004] with Infrastructure Operations; recorded action: Confirm compatibility, schedule maintenance, and verify patch installation.",
+      "Verify remediation progress for [ICT-005] with Application Operations; recorded action: Assign owners and update the service account inventory."
+    ],
+    "blockers": [
+      "[ICT-001] Privileged account can authenticate without an additional factor, increasing the risk of account compromise.",
+      "[ICT-002] Scheduled user-access attestation has not been completed for the current review period.",
+      "[ICT-003] Application login events are not forwarded to the centralized monitoring system."
+    ],
+    "evidence_ticket_ids": [
+      "ICT-001",
+      "ICT-002",
+      "ICT-003",
+      "ICT-004",
+      "ICT-005",
+      "ICT-006",
+      "ICT-007",
+      "ICT-008",
+      "ICT-009",
+      "ICT-010",
+      "ICT-011",
+      "ICT-012"
+    ]
+  }
+}
